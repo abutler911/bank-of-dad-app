@@ -1,21 +1,37 @@
 {
   "name": "bank-of-dad-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application for managing finances and transactions, inspired by the concept of a 'Bank of Dad'.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo 'No tests defined yet'"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Andrew Butler",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abutler911/bank-of-dad-app"
+  },
+  "keywords": [
+    "finance",
+    "banking",
+    "transactions",
+    "node",
+    "express",
+    "mongodb"
+  ],
   "dependencies": {
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mongoose": "^8.3.2",
-    "nodemon": "^3.1.0",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
