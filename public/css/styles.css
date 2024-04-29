@@ -1,0 +1,27 @@
+body {
+  background-color: #cef1ff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+.btn-primary {
+  background-color: #74b7ff;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #74b7ff;
+}
