@@ -1,9 +1,22 @@
+:root {
+  --primary-color: #74b7ff;
+  --secondary-color: #cef1ff;
+  --text-color: #000;
+  --footer-text-color: #888;
+}
+
+:root {
+  --base-font-size: 16px;
+  --footer-font-size: 0.6rem;
+}
+
 body {
-  background-color: #cef1ff;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: "Noto Sans", sans-serif;
+  font-size: var(--base-font-size);
 }
 
 main {
@@ -11,17 +24,20 @@ main {
 }
 
 footer {
-  font-size: 0.8rem;
+  font-size: var(--footer-font-size);
+  color: var(--footer-text-color);
 }
-
+.heart {
+  color: red;
+}
 .btn-primary {
-  background-color: #74b7ff;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: #000;
-  border: 1px solid #74b7ff;
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
 }
